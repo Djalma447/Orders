@@ -4,7 +4,7 @@
     {
         public int Quantity { get; set; }
         public double Price { get; set; }
-        public Product product { get; set; }
+        public Product Product { get; set; }
 
         public OrderItem()
         {
@@ -14,7 +14,7 @@
         {
             Quantity = quantity;
             Price = price;
-            this.product = product;
+            Product = product;
         }
 
         public double SubTotal()
