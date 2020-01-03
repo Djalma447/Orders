@@ -60,9 +60,9 @@ namespace Orders.Entities
             sb.AppendLine("Order items:");
             foreach(OrderItem item in Items)
             {
-                sb.Append(item.product.Name);
+                sb.Append(item.Product.Name);
                 sb.Append(", $");
-                sb.Append(item.product.Price.ToString("F2", CultureInfo.InvariantCulture));
+                sb.Append(item.Product.Price.ToString("F2", CultureInfo.InvariantCulture));
                 sb.Append(", Quantity: ");
                 sb.Append(item.Quantity);
                 sb.Append(", Subtotal: $");
